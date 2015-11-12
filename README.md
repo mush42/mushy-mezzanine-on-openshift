@@ -39,6 +39,12 @@ This is an independent fork of Biwin John's django-on-open-shift (https://github
 ```
 
 
+- Set Python application environment variable like this:
+    
+
+        ``rhc env set OPENSHIFT_PYTHON_WSGI_APPLICATION=wsgi/wsgi.py --app mezzanineapp`
+
+
 - Push the repo upstream
 
 

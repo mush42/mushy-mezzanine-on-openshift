@@ -56,7 +56,10 @@ This is an independent fork of Biwin John's django-on-open-shift (https://github
     `python app-root/repo/manage.py createsuperuser`
 
 
-- Now use your browser to connect to the Admin site at https//<your-app-name>-<your-user-name>.rhcloud.com/admin/.
+- Now use your browser to connect to the Admin site at:
+
+` https//<your-app-name>-<your-user-name>.rhcloud.com/admin/`
+
 
 ### Static files
 Static files are already setup and ready to use for either local or Openshift use. 

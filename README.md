@@ -69,7 +69,7 @@ Your HTML templates can be placed on,
  * `project/app/template`
 
 
-### Running locally and the django tutorial
+### Running locally
 This repository was designed to allow you to quickly develop and deploy a website to Openshift.  For local development, make sure you have the following setup:
 
 - Virtualenv for this instance of python / django.
@@ -96,10 +96,13 @@ By default, debug mode is off when pushed to Openshift.  However, if you'd like 
 
 ### HTTPS redirection
 HTTPS redirection is accompished by telling the local Apache gear to redirect all traffic to the HTTPS version of your site.  You'll need to make sure that the following lines are present in your wsgi/.httaccess file:
+    
+    
+    ```
     RewriteEngine on
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
-
+    ```
 
 This will redirect **ALL** HTTP traffic to the site to HTTPS.
 

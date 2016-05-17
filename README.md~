@@ -1,4 +1,4 @@
-Mushy Mezzanine On OpenShift
+Mezzanine Mushy Openshift
 ===
 
 Mezzanine 4.0.1 with django 1.8x ready to be deployed to Redhat Openshift with minimum setup.
